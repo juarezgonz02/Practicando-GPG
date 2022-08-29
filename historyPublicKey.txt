@@ -1,0 +1,72 @@
+    1  su
+    2  sudo nano 
+    3  sud
+    4  su
+    5  sudo nano 
+    6  clear
+    7  sudo apt install gnupg
+    8  gpg --full-generate-key
+    9  clear
+   10  gpg --full-generate-key
+   11  gpg --list-key
+   12  gpg --output juarez.gpg --export 000126320@uca.edu.sv
+   13  gpg --output juarez.gpg --export 00126320@uca.edu.sv
+   14  ls -all
+   15  nano juarez.gpg
+   16  clear
+   17  gpg --armor --export 00126320@uca.edu.sv --output juarez_armor.gpg
+   18  nano public_key.txt
+   19  clear
+   20  gpg --export-secret-keys --armor 00126320@uca.edu.sv > ./prive-key.asc
+   21  ls -all
+   22  nano prive-key.asc 
+   23  clear
+   24  gpg --import 
+   25  nano miguel.gpg
+   26  ls -all
+   27  mv public_key.txt public_key.gpg
+   28  mv public_key.txt juarez-public_key.gpg
+   29  mv public_key.gpg juarez-public_key.gpg
+   30  clear
+   31  nano juarez
+   32  nano juarez-public_key.gpg 
+   33  clear
+   34  nano miguel.gpg
+   35  nano nextor.gpg
+   36  clear
+   37  gpg --import ~/Downloads/miguel.gpg 
+   38  gpg --import ~//miguel.gpg 
+   39  gpg --import ~/nextor.gpg
+   40  gpg --list-key
+   41  gpg --edit-key 00087518@uca.edu.sv
+   42  gpg --edit-key nestor@uca.edu.sv
+   43* gpg --edit-key nana@uca.edu.sv
+   44  gpg --edit-key nes@uca.edu.sv
+   45  clear
+   46  gpg --edit-key naldana@uca.edu.sv
+   47  gpg --edit-key 00087518@uca.edu.sv
+   48  clear
+   49  history > history.txt
+   50  cat history.txt 
+   51  gpg --output history.txt.gpg --symmetric history.txt
+   52  nano history.txt.gpg 
+   53  gpg --output --armor history.txt.gpg --symmetric history.txt
+   54  gpg --output history.txt.gpg --armor  --symmetric history.txt
+   55  nano history.txt.gpg 
+   56  clear
+   57  history > historyPublicKey.txt
+   58  cat historyPublicKey.txt 
+   59  clear
+   60  gpg --list-key
+   61  clear
+   62  mkdir cypher
+   63  clear
+   64  cd cypher/
+   65  clear
+   66  history > history.txt
+   67  cat history.txt 
+   68  CLEAR
+   69  clear
+   70  gpg --armor --output history.txt.gpg --symmetric history.txt
+   71  cat history.txt.gpg 
+   72  history > historyPublicKey.txt
